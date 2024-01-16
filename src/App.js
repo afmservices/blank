@@ -9,7 +9,7 @@ function App() {
 
   const handleSubmit = () => {
     axios
-      .post('http://localhost:8443/api/trash/add',null, {params:{iin}})
+      .post('https://amlacademy.kz/api/trash/add',null, {params:{iin}})
       .then((res) => {
         console.log(res)
       })
