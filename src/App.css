@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: 100vh; /* This is optional; it centers the content vertically in the viewport */
+}
+
+.container {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 20%; /* Adjust the size as needed */
+  margin-bottom: 10px; /* Add some space between the logo and the link */
+}
+
+.input  {
+  margin-top: 80px;
+  width: 53%;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: none;
+  border: 1px solid #0b345f54;
+}
+
+.button {
+  width: 50%;
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* You can change this to any desired background color */
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #0056b3; /* You can change this to a darker shade for the hover effect */
+}
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-top: 30%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
