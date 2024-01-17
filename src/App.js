@@ -26,8 +26,10 @@ function App() {
     <div className="App">
       {modal == false ? 
         <div className="container">
-        <a className='title'>Агентство финансового мониторинга РК</a>
-        <img style={{marginTop: '4%'}} src={afm} alt="" className="logo" />
+          <div className='logowithname'>
+            <img src={afm} alt="" className="logo" />
+            <a className='title'>АГЕНТСТВО ПО ФИНАНСОВОМУ МОНИТОРИНГУ РК</a>
+          </div>
         <a className='text'>Бюро пропусков</a>
         <input className="input" placeholder='Введите ИИН' type='text' value={iin} onChange={(e) => setIin(e.target.value)}/>
         <a className='button' onClick={handleSubmit} style={{marginTop: '10%'}}>
