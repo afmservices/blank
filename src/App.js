@@ -28,7 +28,7 @@ function App() {
         <div className="container">
           <div className='logowithname'>
             <img src={afm} alt="" className="logo" />
-            <a className='title'>АГЕНТСТВО ПО ФИНАНСОВОМУ МОНИТОРИНГУ РК</a>
+            <a className='title'>АГЕНТСТВО <span className='second'>ПО ФИНАНСОВОМУ</span> МОНИТОРИНГУ <span className='span'>РЕСПУБЛИКИ КАЗАХСТАН</span></a>
           </div>
         <a className='text'>Бюро пропусков</a>
         <input className="input" placeholder='Введите ИИН' type='text' value={iin} onChange={(e) => setIin(e.target.value)}/>
@@ -38,7 +38,7 @@ function App() {
         </div>
         : 
         <div className="container">
-        <a className='title'>Пропуск оформлен!</a>
+        <a className='title2'>Пропуск оформлен!</a>
         </div>
       }
     </div>
